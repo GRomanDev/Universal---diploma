@@ -16,49 +16,57 @@
     <header class="header">
       <div class="container">
         <div class="header-top">
-          <img
-            src="img/icons/icon-hamburger-menu.svg"
-            alt="Icon: hamburger menu"
-            class="icon-menu"
-          />
-          <span class="header__text">Sections</span>
+          <button class="menu-button">
+            <img
+              src="img/icons/icon-hamburger-menu.svg"
+              alt="Icon: hamburger menu"
+              class="icon-menu"
+            />
+            <span class="header__text">Sections</span>
+          </button>
           <img
             src="img/divider-vertical.png"
             alt="Divider vertical"
             class="header__divider--vert"
           />
-          <div class="header-search">
+          <form action="#" class="header-search">
             <img
               src="img/icons/icon-search.svg"
               alt="Icon search"
               class="header-search__icon"
             />
-            <span class="header-search__text">Search</span>
-          </div>
-          <div class="header-subscribe">
+            <input
+              type="search"
+              class="header-search__input"
+              placeholder="Search"
+            />
+          </form>
+          <a href="#" class="header-subscribe">
             <img
               src="img/subscribe.jpg"
               alt="image subscribe"
               class="header-subscribe__image"
             />
-            <span class="header-subscribe__text">Subscribe Now</span>
-            <span class="header-subscribe__pricetag">3 month for $19</span>
-          </div>
-          <div class="header-login">
+            <div class="header-subscribe__info">
+              <span class="header-subscribe__text">Subscribe Now</span>
+              <span class="header-subscribe__pricetag">3 month for $19</span>
+            </div>
+          </a>
+          <a href="#" class="header-login">
             <img
               src="img/icons/icon-man.svg"
               alt="Icon: man"
               class="header-login__icon"
             />
             <span class="header-login__text">Sign In</span>
-          </div>
+          </a>
+          <img
+            src="img/divider-horizontal.png"
+            alt="Divider horizontal"
+            class="header__divider--hor"
+          />
         </div>
         <!-- /.header-top -->
-        <img
-          src="img/divider-horizontal.png"
-          alt="Divider horizontal"
-          class="header__divider--hor"
-        />
       </div>
       <!-- /.container -->
     </header>
