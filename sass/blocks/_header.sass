@@ -116,6 +116,20 @@
     display: none
 .navbar
   background-color: $text-grey-100
+  &-dropdown
+    // display: none
+    max-width: 1140px
+    margin: auto
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    top: 50px
+    opacity: 0.97
+    padding-top: 20px    
+    overflow: auto
+    &--visible
+      display: block      
   &-menu
     display: flex
     align-items: center
@@ -123,7 +137,13 @@
     max-width: 1137px
     list-style: none
     padding: 18px 0
-    margin: 0
+    margin: 0 auto
+    &__item-dd
+      margin-bottom: 15px
+    &--dropdown
+      flex-direction: column
+      // align-items: start
+      padding: 0
     &__link
       text-decoration: none
       color: $light
