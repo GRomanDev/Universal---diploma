@@ -1,8 +1,15 @@
-.header
-  &-top
+.header  
+  &-top    
     display: flex
     align-items: center    
-    flex-wrap: wrap
+    flex-wrap: wrap    
+    &--fixed
+      position: fixed    
+      top: 0
+      left: 0
+      right: 0
+      background-color: $light
+      z-index: 99      
   &-menu    
     display: flex
     align-items: center
@@ -71,8 +78,10 @@
       line-height: 20px
       color: $text-grey-85
   &__divider
-    &--vert
+    &-vert
       margin: 0 25px
+    &-hor
+      height: 1px
   &-bottom
     display: flex
     align-items: center    
@@ -98,10 +107,13 @@
       font-style: normal
       font-weight: normal
       font-size: 14px
-      line-height: 
+      line-height: 20px
       margin-left: 10px
 .logo
+  max-width: 184px
   margin: 0 auto 0 130px
+  &--mobile
+    display: none
 .navbar
   background-color: $text-grey-100
   &-menu
