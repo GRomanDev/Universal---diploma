@@ -1,21 +1,33 @@
 .header
   &-top
     display: flex
-    align-items: center
-    // justify-content: space-between
+    align-items: center    
     flex-wrap: wrap
-  &__text
-    font-family: 'Lato', sans-serif
-    font-weight: bold
-    color: #262D33
-    font-size: 14px
-    line-height: 20px
-    margin-left: 15px
+  &-menu    
+    display: flex
+    align-items: center
+    background-color: transparent
+    &__text      
+      font-weight: bold
+      color: $text-grey-100
+      font-size: 14px
+      line-height: 20px
+      margin-left: 15px
   &-search
     display: flex
     align-items: center
+    &__button
+      max-height: 20px
+      padding: 1px
+      background-color: transparent
     &__input
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-grey-50
       border: none
+      padding: 0
       margin-left: 10px
   &-subscribe
     display: flex
@@ -34,6 +46,17 @@
       display: flex
       flex-direction: column
       margin-left: 10px
+    &__text
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $text-grey-100
+    &__pricetag
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $text-grey-50
   &-login
     display: flex
     align-items: center
@@ -41,14 +64,64 @@
     min-width: 72px
     text-decoration: none
     color: inherit
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-grey-85
   &__divider
     &--vert
       margin: 0 25px
-  .menu
-    &-button
+  &-bottom
+    display: flex
+    align-items: center    
+    &__img
+      margin-left: 30px
+    &__loc
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      margin-left: 15px
+    &__date
+      width: 195px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      margin-right: 23px
+    &__weather
       display: flex
-      align-items: center      
-      background-color: transparent
+      align-items: center
+    &__deg
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 
+      margin-left: 10px
+.logo
+  margin: 0 auto 0 130px
+.navbar
+  background-color: $text-grey-100
+  &-menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 1137px
+    list-style: none
+    padding: 18px 0
+    margin: 0
+    &__link
+      text-decoration: none
+      color: $light
+      font-weight: bold
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+  
+  
     
     
 
