@@ -39,6 +39,7 @@
     margin-bottom: -285px
 .tabs
   &-content
+    display: none
     position: relative
     min-width: 877px
     height: 570px
@@ -46,6 +47,10 @@
     background-size: cover
     padding: 55px 224px 95px 55px
     z-index: 0
+    visibility: hidden
+    &--visible
+      display: block
+      visibility: visible
     &:before 
       content: ""
       position: absolute
