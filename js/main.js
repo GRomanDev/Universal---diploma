@@ -3,4 +3,5 @@ $(document).ready(function () {
   headerMenu.on("click", function () {
     $(".navbar-dropdown").toggleClass("navbar-dropdown--visible");
   });
+  $(".fancybox").fancybox();
 });
