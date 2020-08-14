@@ -37,10 +37,11 @@
   &-content
     display: none
     position: relative
-    min-width: 877px
+    max-width: 877px
     height: 570px
     background-image: url(../img/recommended/mountain-river.png)    
     background-size: cover
+    background-repeat: no-repeat
     padding: 55px 224px 95px 55px
     z-index: 0
     visibility: hidden
@@ -78,14 +79,14 @@
     &__video
       display: flex
       flex-direction: column
-      &--title
+      &-title
         font-style: normal
         font-weight: normal
         font-size: 14px
         line-height: 20px
         mix-blend-mode: normal
         opacity: 0.85
-      &--time
+      &-time
         font-style: normal
         font-weight: normal
         font-size: 12px
@@ -132,6 +133,7 @@
     margin: 0
     list-style: none
     &__item
+      max-width: 263px
       cursor: pointer
       &--active
         background-color: #F5F5F5
@@ -170,7 +172,7 @@
       font-weight: normal
       font-size: 14px
       line-height: 20px
-      &--wrap
+      &-wrap
         display: flex
         align-items: center
 .icon
@@ -190,14 +192,10 @@
     &--tech-reviews
       top: 500px
 #cars
-  background-image: url(../img/recommended/car-dealers.png)    
-  background-size: cover
+  background-image: url(../img/recommended/car-dealers.png)
 #movies
-  background-image: url(../img/recommended/war.jpg)    
-  background-size: cover
+  background-image: url(../img/recommended/war.jpg)
 #NFL
-  background-image: url(../img/recommended/nfl.jpg)    
-  background-size: cover
+  background-image: url(../img/recommended/nfl.jpg)
 #tech-reviews
-  background-image: url(../img/recommended/bookcases.png)    
-  background-size: cover
+  background-image: url(../img/recommended/bookcases.png)
