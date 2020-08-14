@@ -16,18 +16,14 @@
     line-height: 25px
     border-radius: 10px
     padding: 25px 25px 30px
-    margin-bottom: 30px
-    max-height: 130px
+    margin-bottom: 30px    
     &__item
       display: flex
       align-items: center
-      &:not(:last-child)
-        &:after
-          content: ''
-          border-right: solid 1px
-          height: 75px
-          color: $text-grey-85          
-          margin: 0 25px
+      &:not(:last-child)          
+        border-right: solid 1px $text-grey-85        
+        margin: 0 25px 0 0
+        padding-right: 25px
     &__text
       max-width: 154px 
       margin: 0 15px 0 0
