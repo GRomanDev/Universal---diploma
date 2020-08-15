@@ -18,6 +18,55 @@
   .tabs
     &-content 
       max-width: 725px
+  .cards    
+    &-wrapper    
+      grid-gap: 25px
+  .card
+    &-cars
+      &__main
+        padding-left: 25px
+        &-photo
+          max-width: 249px
+          object-fit: cover
+        &-article
+          font-size: 21px
+          line-height: 28px
+          margin: 0 0 20px
+        &-description
+          margin-bottom: 34px
+      &__author
+        padding-left: 25px
+      &__name
+        margin-right: 12px
+      &__textar
+        max-width: 215px
+    &-popular
+      padding-right: 25px
+      &__button
+        margin-bottom: 96px
+      &__article
+        font-size: 15px
+        line-height: 23px
+    &-cats
+      &__img
+        height: 260px
+      &__article
+        padding: 22px 16px 20px
+        margin: 0
+    &-small
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 20px 20px 22px
+      &__article
+        font-size: 15px
+        line-height: 23px
+      &__description
+        margin: 0
+  .columns
+    &__article
+      font-size: 18px
+      line-height: 24px
 @media (max-width: 992px)
   .container,
     max-width: 700px
