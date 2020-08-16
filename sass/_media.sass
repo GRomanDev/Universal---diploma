@@ -68,6 +68,14 @@
     &__article
       font-size: 18px
       line-height: 24px
+  .bookmarks
+    &-main
+      max-width: 685px
+      &__image
+        min-width: 40%
+        max-height: 100%
+    &-aside
+      max-width: 252px
 @media (max-width: 992px)
   .container,
     max-width: 700px
@@ -200,6 +208,45 @@
       height: 55px
     &__article
       font-size: 17px
+  .bookmarks
+    &-main
+      padding: 0 18px 25px
+      max-width: 476px
+      &__image
+        min-width: 45%
+        max-height: 100%
+        margin-right: 18px
+      &__title
+        margin-bottom: 10px
+      &__article
+        font-size: 14px
+        line-height: 19px
+        margin-bottom: 7px
+      &__description
+        font-size: 11px
+        line-height: 16px
+    &-aside
+      max-width: 201px
+      max-height: 760px
+      &__title
+        text-align: center
+        font-size: 12px
+        line-height: 16px
+        padding-bottom: 7px
+      &__block
+        margin: 0 15px
+        &::before        
+          font-size: 60px
+          line-height: 45px
+      &__img
+        width: 55px
+        margin-right: 8px
+      &__article
+        font-size: 12px
+        line-height: 16px
+      &__time
+        font-size: 11px
+        line-height: 13px
 @media (max-width: 767px)
   .container    
     width: 92%
@@ -327,6 +374,26 @@
     &__article
       font-size: 36px
       line-height: 46px
+  .bookmarks
+    padding: 45px 0
+    &-main
+      max-width: 64%
+      min-width: 320px
+      &__block
+        flex-direction: column
+        padding-top: 25px
+      &__image
+        margin-bottom: 11px
+      &__icon
+        top: 10px
+        right: -5px
+      &__text
+        padding-right: 18px
+    &-aside
+      max-width: 32%
+      &__article
+        font-size: 11px
+        line-height: 15px
 @media (max-width: 576px)
   .header
     &-bottom
@@ -461,6 +528,16 @@
     &__article
       font-size: 36px
       line-height: 46px
+  .bookmarks
+    &-wrap
+      flex-direction: column
+      align-items: center
+    &-main
+      max-width: 90%
+      min-width: 305px
+      margin-bottom: 15px
+    &-aside
+      max-width: 263px      
 @media (max-width: 468px)
   .header
     &-subscribe
