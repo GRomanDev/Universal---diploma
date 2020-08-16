@@ -186,7 +186,7 @@
         grid-column: 3 / 5
         grid-row: 5 / 6
       &--3
-        grid-column: 5 / 7
+        grid-column: 1 / 3
         grid-row: 6 / 7
       &--4
         grid-column: 3 / 5
@@ -399,15 +399,22 @@
       grid-row: 1 / 3
       min-height: 230px
       &__main
-        background-image: url(../img/cards/car-photo.png)
-        background-repeat: no-repeat
-        background-position: right
-        // background-size: cover
+        position: relative          
         min-height: 279px
-        // display: grid
-        // grid-template-columns: 1fr  
-        // grid-template-rows: 1fr 220px      
-        // flex-direction: column
+        z-index: 0
+        &:before
+          content: ""
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background-image: url(../img/cards/car-photo.png)
+          background-repeat: no-repeat
+          background-position: right                    
+          z-index: -1          
         &-photo
           display: none          
           max-width: 100%
@@ -471,6 +478,9 @@
   .card
     &-cars
       padding-bottom: 9px
+      &__main        
+        &:before                  
+          filter: blur(0.8px) opacity(80%)   
       &__author
         padding: 0 12px
       &__name
