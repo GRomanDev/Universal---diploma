@@ -1,3 +1,79 @@
 .bookmarks
+  padding: 60px 0
   &-wrap
     display: flex
+    justify-content: space-between
+  &-main
+    border-radius: 10px
+    background-color: $light
+    max-width: 848px
+    padding: 0 25px 25px
+    &__block
+      position: relative
+      display: flex
+      justify-content: space-between      
+      padding: 25px 0
+      border-bottom: 1px solid #D9DADB
+    &__icon
+      position: absolute
+      top: 25px
+      right: 0
+      &--active
+        // color: red
+        // background-image: url(img/bookmarks/icons/icon-bookmark-red.svg)      
+    &__image
+      min-width: 336px
+      max-height: 195px
+      margin-right: 26px          
+    &__title
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      margin: 0 0 15px
+      &--flights
+        color: #4592FF
+    &__article
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $text-grey-100
+      margin: 0 0 10px
+    &__description
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      max-width: 425px
+      margin: 0 0 20px
+    &__date
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $text-grey-50
+      margin-right: 11px      
+    &__icon
+      &-comment
+        width: 15px
+        height: 15px
+        vertical-align: middle
+        margin-right: 5px
+      &-heart
+        width: 15px
+        height: 15px
+        vertical-align: middle
+        margin-right: 5px
+    &__num
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $text-grey-50
+      margin-right: 10px
+  &-aside
+    
+
