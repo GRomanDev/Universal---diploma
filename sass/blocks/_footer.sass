@@ -43,3 +43,98 @@
       min-width: 119px
       border-radius: 20px
       padding: 10px 29px
+  &-wrap
+    display: grid
+    grid-template-columns: repeat(6, minmax(min-content, 1fr))
+    grid-auto-rows: minmax(64px, min-content)
+    // grid-row-gap: 20px
+    grid-column-gap: 0
+  &__list    
+    padding-top: 30px
+    &:nth-child(-n+5)      
+      width: 195px
+    &--news
+      border-top: 5px solid #FF4F52
+    &--arts
+      border-top: 5px solid #AC8EE3
+    &--travel
+      border-top: 5px solid #4592FF
+    &--sports
+      border-top: 5px solid #FFA34D
+    &--tech
+      border-top: 5px solid #3DC47E
+    &--moneys
+      border-top: 5px solid #6E99AE    
+  &__title
+    font-weight: bold
+    font-size: 14px
+    line-height: 20px
+    color: $text-grey-100
+    margin: 0 0 25px
+  &__ul
+    list-style: none
+    padding-left: 0
+    margin: 0
+  &__item
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    &:not(:last-child)      
+      margin-bottom: 15px
+  &__link
+    text-decoration: none
+    color: inherit
+    &-contact
+      text-decoration: none
+      font-weight: bold
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.3px
+      text-transform: uppercase
+      color: $text-grey-100     
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-grey-50
+  &__line
+    &-top
+      width: 100%
+      border-bottom: 1px solid #D9DADB
+      grid-row: 2
+      grid-column: span 6
+      margin-bottom: 30px
+      margin-top: 64px
+  // &__logo
+  //   grid-column: 1
+  //   grid-row: 3
+  //   margin-right: 30px
+  &__contacts
+    grid-column: 1 / 4
+    grid-row: 3
+    display: flex
+    justify-content: space-between
+    padding-bottom: 29px
+  &__networks
+    grid-column: 5 / 7
+    text-align: right
+    min-width: 205px
+    display: flex
+    margin-left: auto
+    justify-content: space-between
+  &__text
+    grid-column: span 7
+    display: flex
+    justify-content: space-between
+    border-top: 1px solid #D9DADB
+    padding-top: 40px 
+    &-l
+      max-width: 750px
+      margin: 0
+    
+
+      
+      
+
