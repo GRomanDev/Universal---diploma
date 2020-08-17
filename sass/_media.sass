@@ -597,9 +597,14 @@
       height: 100%
       &__big
         &:before                  
-          filter: blur(0.5px) opacity(85%)
+          filter: blur(0.5px) opacity(85%)  
       &__small
-        flex-basis: 100%   
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        max-height: 100%
+        height: 218px
+        align-self: start              
 @media (max-width: 468px)
   .header
     &-subscribe
@@ -657,7 +662,9 @@
           color: $text-grey-100
       &__small
         min-width: 263px
-        max-width: 100%
+        max-width: 100%        
+        flex-basis: 100%
+        height: 100%
         &:nth-child(-n+2)          
           margin-bottom: 15px
         &-article
