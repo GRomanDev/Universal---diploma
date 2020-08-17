@@ -76,6 +76,16 @@
         max-height: 100%
     &-aside
       max-width: 252px
+  .prefoot
+    &-slider
+      max-width: 460px              
+    &-cards
+      max-width: 470px
+      &__big
+        &:before                  
+          filter: blur(0.5px) opacity(85%) 
+      &__small
+        min-height: 198px
 @media (max-width: 992px)
   .container,
     max-width: 700px
@@ -247,6 +257,29 @@
       &__time
         font-size: 11px
         line-height: 13px
+  .prefoot
+    padding: 45px 0
+    &-grid
+      flex-direction: column
+    &-slider
+      flex-basis: 100%
+      min-width: 555px
+      height: 570px
+      &__prof
+        margin-bottom: 45px
+      &__article
+        margin-bottom: 60px
+    &__slider
+      margin: 0 auto 30px
+    &-cards
+      width: 555px
+      max-width: 555px
+      margin: 0 auto
+      &__big
+        &::before
+          filter: none
+      &__small
+        min-height: 170px 
 @media (max-width: 767px)
   .container    
     width: 92%
@@ -394,6 +427,14 @@
       &__article
         font-size: 11px
         line-height: 15px
+  &.prefoot
+    &__slider
+      margin: 0 auto 40px
+    &-slider
+      min-width: 535px
+      width: 540px
+    &-cards
+      width: 540px
 @media (max-width: 576px)
   .header
     &-bottom
@@ -537,7 +578,28 @@
       min-width: 305px
       margin-bottom: 15px
     &-aside
-      max-width: 263px      
+      max-width: 263px  
+  &.prefoot
+    padding: 30px 0
+    &__slider
+      margin: 0 auto 40px
+    &-slider
+      min-width: 290px
+      max-width: 540px
+      width: 100%
+      height: 100%
+      &__item
+        min-height: 570px
+    &-cards
+      min-width: 290px
+      max-width: 540px
+      width: 100% 
+      height: 100%
+      &__big
+        &:before                  
+          filter: blur(0.5px) opacity(85%)
+      &__small
+        flex-basis: 100%   
 @media (max-width: 468px)
   .header
     &-subscribe
@@ -573,6 +635,36 @@
     &__article
       font-size: 29px
       line-height: 38px
+  .prefoot
+    &-slider
+      &__article
+        font-size: 30px
+        line-height: 44px
+    &-cards
+      align-items: center
+      &__big
+        overflow: hidden
+        &:before
+          width: 275px
+          height: 352px
+          right: -21px
+          filter: blur(0.7px) opacity(75%)                    
+        &-article
+          font-size: 23px
+          line-height: 29px
+        &-description
+          font-size: 15px
+          color: $text-grey-100
+      &__small
+        min-width: 263px
+        max-width: 100%
+        &:nth-child(-n+2)          
+          margin-bottom: 15px
+        &-article
+          margin-bottom: 11px
+        &-description
+          margin-bottom: 21px
+
 
 
 
