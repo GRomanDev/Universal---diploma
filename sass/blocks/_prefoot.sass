@@ -1,0 +1,35 @@
+.prefoot
+  background-color: $text-grey-100
+  padding: 60px 0
+  &-grid
+    display: flex
+  &-slider
+    width: 555px
+    height: 570px
+    &__pagination
+      position: absolute
+      text-align: center
+      transition: .3s opacity
+      transform: translate3d(0,0,0)
+      z-index: 10
+      &-icon
+        fill: red
+  &-cards
+    width: 555px
+    &__big
+      position: relative
+      width: 555px
+      height: 370px
+      background-color: #B4D1E0       
+      border-radius: 10px
+      z-index: 0
+      padding: 35px 0 50px 35px
+      &::before
+        position: absolute
+        content: ''
+        width: 275px
+        height: 352px
+        right: 30px
+        bottom: 0
+        background-image: url(../img/prefoot/cards-big-bg.png)
+        z-index: -1

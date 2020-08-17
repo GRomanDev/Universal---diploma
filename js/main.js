@@ -18,4 +18,14 @@ $(document).ready(function () {
   bookmark.on("click", function () {
     $(this).toggleClass("bookmarks-main__icon--active");
   });
+
+  var prefootSlider = new Swiper(".prefoot-slider", {
+    // Optional parameters
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: ".prefoot-slider__pagination",
+    },
+  });
 });
