@@ -13,4 +13,9 @@ $(document).ready(function () {
     $(".tabs-content").removeClass("tabs-content--visible");
     $(activeTabContent).toggleClass("tabs-content--visible");
   });
+
+  var bookmark = $(".bookmarks-main__icon");
+  bookmark.on("click", function () {
+    $(this).toggleClass("bookmarks-main__icon--active");
+  });
 });
