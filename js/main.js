@@ -23,6 +23,7 @@ $(document).ready(function () {
     // Optional parameters
     loop: true,
     effect: "fade",
+    speed: 2100,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
