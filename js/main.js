@@ -22,7 +22,11 @@ $(document).ready(function () {
   var prefootSlider = new Swiper(".prefoot-slider", {
     // Optional parameters
     loop: true,
-
+    effect: "fade",
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     // If we need pagination
     pagination: {
       el: ".prefoot-slider__pagination",
