@@ -3,20 +3,120 @@
   padding: 60px 0
   &-grid
     display: flex
-  &-slider
+    justify-content: space-between
+  &__slider
+    margin: 0 auto 0 0
+  &-slider    
     width: 555px
     height: 570px
-    &__pagination
-      position: absolute
+    // &__pagination      
+      // position: absolute
+      // text-align: center
+    //   transition: .3s opacity
+    //   transform: translate3d(0,0,0)
+    //   z-index: 10
+    //   &-icon
+    //     fill: red
+    &__item
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center      
+      color: $light      
+      background-repeat: no-repeat
+      background-size: cover
+      border-radius: 10px
+      z-index: 0
+      padding: 40px 50px 38px
+      &--1
+        background-image: url(../img/prefoot/prefoot-slider-bg-1.png)
+      &--2
+        background-image: url(../img/prefoot/prefoot-slider-bg-2.png)
+      &--3
+        background-image: url(../img/prefoot/prefoot-slider-bg-31.png)
+      &--4
+        background-image: url(../img/prefoot/prefoot-slider-bg-41.png)
+      &--5
+        background-image: url(../img/prefoot/prefoot-slider-bg-5.png)      
+      &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background-color: rgba(64, 48, 61, 0.35)
+        z-index: -1
+    &__author
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__avatar
+      width: 45px
+      height: 45px
+      border-radius: 50%
+      margin-bottom: 8px
+    &__name
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      mix-blend-mode: normal
+      opacity: 0.85
+      margin-bottom: 2px
+    &__prof
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      mix-blend-mode: normal
+      opacity: 0.4
+      margin-bottom: 30px
+    &__article
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
       text-align: center
-      transition: .3s opacity
-      transform: translate3d(0,0,0)
-      z-index: 10
+      margin: 0 0 45px
+    &__button      
+      min-width: 185px
+      width: 40px
+      padding: 10px 25px 10px 20px
+      &-label
+        position: absolute
+        top: 18px
+        left: 18px
+        width: 45px
+        height: 25px
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        background-color: #FF4F52
+        color: $light
+        border-radius: 3px
+        padding: 5px 11px
+        border-radius: 3px
+        z-index: 100   
+        visibility: visible     
       &-icon
-        fill: red
+        vertical-align: middle
+        margin-right: 6px
+      &-num
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #C5E4FC
+        margin-left: 5px
   &-cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
     width: 555px
     &__big
+      flex-basis: 100%
       position: relative
       width: 555px
       height: 370px
@@ -33,3 +133,54 @@
         bottom: 0
         background-image: url(../img/prefoot/cards-big-bg.png)
         z-index: -1
+      &-info
+        max-width: 243px
+      &-title
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: #6E99AE
+        margin: 0 0 20px
+      &-article
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 25px
+        line-height: 30px
+        color: $text-grey-100
+        margin: 0 0 15px
+      &-description        
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        max-width: 213px
+        margin: 0 0 25px
+    &__small
+      align-self: end
+      flex-basis: 48%
+      max-height: 170px
+      max-width: 263px
+      padding: 25px 25px 30px
+      &-article
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        color: #262D33
+        margin: 0 0 5px
+      &-description
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        margin: 0 0 10px
+      &-date
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: #939699
+  
