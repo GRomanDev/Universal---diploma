@@ -23,7 +23,7 @@ if(empty($message)){
 <h2>Новое обращение</h2>
 <b>Почта:</b> $email
 ";
-// header('Location: thankyou-newsletter.html');
+header('Location: thankyou.html');
 }
 if(empty($email)){
     $body = "
@@ -68,4 +68,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
