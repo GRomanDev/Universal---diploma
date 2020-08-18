@@ -33,4 +33,16 @@ $(document).ready(function () {
       el: ".prefoot-slider__pagination",
     },
   });
+
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
+  });
 });
