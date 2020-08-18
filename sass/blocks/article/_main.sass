@@ -22,7 +22,7 @@
   &__icon
     &-bmark
       position: absolute
-      top: 150px
+      top: 95px
       left: 0
       opacity: 0.4
     &-clock, &-heart, &-comment
@@ -38,6 +38,8 @@
     display: flex
     align-items: center
     justify-content: space-between
+    &__destinations
+      margin: 0
   &-tomain
     min-width: 267px
     display: flex
@@ -74,8 +76,12 @@
     display: flex
     align-items: center
     max-width: 396px
-    justify-content: space-between
+    // justify-content: space-between
     margin-bottom: -25px
+    &-left
+      display: flex
+      justify-content: space-between
+      min-width: 220px
   &__time, &__num
     font-style: normal
     font-weight: normal
@@ -93,6 +99,7 @@
     background-color: transparent
     border: 1px solid $light
     border-radius: 20px
+    margin-left: auto
     padding: 10px 25px 10px 20px
   &__card
     display: flex
