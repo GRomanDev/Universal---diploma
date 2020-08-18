@@ -1,8 +1,150 @@
-.main
+.main  
+  position: relative
+  padding: 63px 0 60px
+  height: 638px
   background-image: url(../img/article/main.png) 
   background-repeat: no-repeat
   background-size: cover
   background-position: center
+  z-index: 0
+  &::before
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(64, 48, 61, 0.35)
+    z-index: -1
+  &-container
+    position: relative
+    color: $light
+  &__icon
+    &-bmark
+      position: absolute
+      top: 150px
+      left: 0
+      opacity: 0.4
+    &-clock, &-heart, &-comment
+      vertical-align: middle
+      opacity: 0.4   
+      margin-bottom: 2px 
+    &-arrowl, &-arrowr
+      vertical-align: middle
+      margin-bottom: 2px
+    &-share
+      margin-right: 6px
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-tomain
+    min-width: 267px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__text
+      font-weight: bold
+      font-size: 14px
+      line-height: 20px
+  &-link
+    font-weight: bold
+    font-size: 14px
+    line-height: 20px
+    text-decoration: none
+    color: inherit
+  &__title
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 55px
+    line-height: 70px
+    max-width: 750px
+    margin: 50px 0 40px
+  &__description
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 30px
+    mix-blend-mode: normal
+    opacity: 0.85
+    max-width: 556px
+    margin: 0 0 70px
+  &__info
+    display: flex
+    align-items: center
+    max-width: 396px
+    justify-content: space-between
+    margin-bottom: -25px
+  &__time, &__num
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    mix-blend-mode: normal
+    opacity: 0.85
+  &__button
+    font-weight: bold
+    font-size: 14px
+    line-height: 20px
+    width: 143px
+    height: 40px
+    color: inherit
+    background-color: transparent
+    border: 1px solid $light
+    border-radius: 20px
+    padding: 10px 25px 10px 20px
+  &__card
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-evenly
+    width: 264px
+    height: 370px
+    margin-bottom: -100px
+    color: $text-grey-100
+    background-color: $light
+    border: 1px solid #D9DADB
+    border-radius: 10px
+    margin-left: auto
+    &-avatar
+      border-radius: 50%
+    &-about
+      display: flex
+      flex-direction: column
+    &-name
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+    &-prof
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-grey-85
+    &-number
+      font-weight: bold
+      font-size: 14px
+      line-height: 20px
+    &-networks
+      display: flex
+      justify-content: space-between
+      width: 140px
+    &-netlink
+      text-decoration: none
+    &-icon
+      border-radius: 50%
+      border: 1px solid #D9DADB
+    &-end
+      font-weight: bold
+      font-size: 14px
+      line-height: 20px
+      width: 100%
+      border-top: 1px solid #D9DADB
+      text-align: center
+      padding-top: 12px
   
 
   
