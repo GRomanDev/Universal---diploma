@@ -74,6 +74,9 @@
     &__message
       width: 100%
       background-size: 100% 100%
+  .comments
+    &-wrap
+      width: 100%
 @media (max-width: 767px)
   .container    
     width: 92%
@@ -233,6 +236,17 @@
       margin-top: 53px
     &-wrapper
       padding: 30px 26px 35px 20px
+  .comments
+    &__title, &__num
+      font-size: 36px
+    &__avatar
+      width: 60px
+      height: 60px
+      margin-right: 10px
+    &__card
+      &-text
+        font-size: 15px
+        line-height: 25px
 @media (max-width: 515px)  
   .start
     &__text      
@@ -293,6 +307,15 @@
     &__title
       font-size: 18px
       line-height: 22px
+  .comments
+    padding-top: 30px
+    &__title
+      align-self: flex-start
+    &__top
+      flex-direction: column
+      &-button
+        align-self: flex-end
+
 @media (max-width: 400px)   
   .start
     &__text
