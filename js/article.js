@@ -26,4 +26,14 @@ $(document).ready(function () {
       prevEl: ".slideshow-slider__button--prev",
     },
   });
+
+  $(".forms").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        required: "This field must not be empty",
+        minlength: "At least 2 characters required",
+      },
+    });
+  });
 });

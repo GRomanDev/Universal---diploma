@@ -15,7 +15,7 @@ $body = "
 <b>Почта:</b> $email<br><br>
 <b>Сообщение:</b><br>$message
 ";
-// header('Location: thankyou-booking.html');
+header('Location: thankyou.html');
 if(empty($message)){
     $body = "
 <h2>Новое обращение</h2>
