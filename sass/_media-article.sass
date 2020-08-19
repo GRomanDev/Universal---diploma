@@ -15,6 +15,9 @@
   .material
     &__text
       max-width: 500px
+  .quote
+    &__text
+      max-width: 500px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -51,7 +54,14 @@
     &__text
       max-width: 330px
     &-card
-      width: 220px      
+      width: 220px    
+  .quote
+    &__text
+      max-width: 330px
+    &-card
+      width: 600px
+      &__text
+        max-width: 424px  
 @media (max-width: 767px)
   .container    
     width: 92%
@@ -86,13 +96,34 @@
         min-width: 207px
   .material
     &-wrapper
-      flex-direction: column      
+      flex-direction: column  
+      align-items: flex-start    
     &__text
       max-width: 500px
       &:not(:last-child)
         margin-bottom: 20px
     &-card
+      align-self: center
       width: 290px      
+  .quote
+    padding-top: 40px
+    &-card
+      width: 100%
+      height: 100%
+      max-width: 550px
+      &__author
+        min-width: 136px
+      &__text
+        max-width: 391px
+        font-size: 21px
+        line-height: 28px
+        margin-right: 25px
+    &__text
+      max-width: 500px
+      &:nth-child(-n+2)    
+        margin-bottom: 22px
+    &__line
+      max-width: 520px
 @media (max-width: 576px)  
   .main
     &__title
@@ -135,6 +166,21 @@
     &__text
       font-size: 16px
       line-height: 23px
+  .quote
+    &-card
+      flex-direction: column
+      max-width: 500px
+      margin-bottom: 30px
+      &::before
+        left: -8px
+      &__author
+        height: 120px
+        align-self: flex-end
+      &__name
+        font-size: 15px
+        line-height: 26px
+    &__line
+      width: 100%
 @media (max-width: 515px)  
   .start
     &__text      
@@ -178,6 +224,13 @@
     &__text
       &--right
         margin-top: 115px 
+  .quote
+    &-tags
+      width: 100%
+      flex-wrap: wrap
+      justify-content: center
+    &__tag
+      margin: 15px 7px 0 0
 @media (max-width: 400px)   
   .start
     &__text
