@@ -22,14 +22,14 @@
       background-position: center
       background-size: 10px
       background-color: transparent
+      background-size: 60px
       &--prev
         left: 35px
-        background-image: url(../img/article/arrow-prev.svg)
-        background-size: 60px
+        background-image: url(../img/article/arrow-prev.svg)        
       &--next
         right: 35px
         background-image: url(../img/article/arrow-next.svg)
-        background-size: 60px
+        // background-size: 60px
   &-card
     display: flex
     flex-direction: column
@@ -39,11 +39,14 @@
       display: flex
       align-items: center
       justify-content: space-between
+      min-height: 70px
     &__text
       font-style: normal
       font-weight: normal
       font-size: 14px
       line-height: 20px
+      max-width: 77%
+      border-right: 1px solid #D9DADB
       margin: 0
       padding: 25px 35px
     &__author
@@ -52,8 +55,7 @@
       justify-content: center
       min-width: 262px
       height: 100%
-      padding: 13px 0
-      border-left: 1px solid #D9DADB
+      padding: 13px 0      
     &__avatar
       border-radius: 50%
       margin-right: 10px

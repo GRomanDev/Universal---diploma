@@ -17,7 +17,6 @@ $(document).ready(function () {
   });
 
   var slideshowSlider = new Swiper(".slideshow-slider", {
-    // Optional parameters
     loop: true,
     keyboard: {
       enabled: true,
