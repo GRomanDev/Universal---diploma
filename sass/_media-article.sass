@@ -64,6 +64,10 @@
         max-width: 424px  
   .sharing
     padding-bottom: 50px
+  .other
+    &-card
+      min-width: 137px
+      width: 100%      
 @media (max-width: 767px)
   .container    
     width: 92%
@@ -126,6 +130,19 @@
         margin-bottom: 22px
     &__line
       max-width: 520px 
+  .other
+    padding: 40px 0 50px
+    &-cards
+      flex-wrap: wrap      
+    &__card
+      margin-bottom: 35px
+      &:not(:last-child)      
+        margin-right: 0
+    &-card
+      width: 48%
+      // flex-basis: 48%
+      &__image
+        width: 100%
 @media (max-width: 576px)  
   .main
     &__title
@@ -190,6 +207,19 @@
       align-items: flex-start
       &-1
         margin-bottom: 15px
+  .other
+    padding: 35px 0 35px
+    &-cards      
+      flex-direction: column
+    &__card
+      &:not(:last-child)      
+        margin-bottom: 40px
+    &-card
+      width: 80%
+      height: 70%
+      &__article
+        font-size: 14px
+        line-height: 22px
 @media (max-width: 515px)  
   .start
     &__text      
