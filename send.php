@@ -5,8 +5,6 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
 
@@ -30,7 +28,7 @@ if(empty($email)){
 <h2>Новое обращение</h2>
 <b>Сообщение:</b><br>$message
 ";
-// header('Location: thankyou-booking.html');
+header('Location: thankyou.html');
 }
 
 // Настройки PHPMailer
