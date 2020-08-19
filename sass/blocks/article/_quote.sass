@@ -1,0 +1,70 @@
+.quote
+  padding-top: 65px
+  &-card
+    position: relative
+    display: flex
+    justify-content: space-between
+    width: 653px
+    height: 180px
+    margin-bottom: 45px
+    z-index: 0
+    &::before
+      position: absolute
+      content: ''
+      width: 70px
+      height: 70px
+      top: -25px
+      left: -19px
+      background-image: url(../img/article/icon-quote.svg)
+      z-index: -1
+    &__text
+      max-width: 458px
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: $text-grey-100
+      margin: 0 0       
+    &__author      
+      display: flex
+      flex-direction: column
+    &__avatar
+      width: 60px
+      height: 60px
+      border-radius: 50%
+      margin-bottom: 10px
+    &__name
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 30px
+    &__prof
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-grey-50
+  &__text
+    &:nth-child(-n+2)    
+      margin-bottom: 30px
+  &-tags
+    width: 433px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__tag
+    font-weight: bold
+    font-size: 14px
+    line-height: 20px
+    color: $text-grey-100
+    background-color: transparent
+    padding: 5px 15px
+    border: 1px solid #D9DADB
+    border-radius: 5px
+    margin-top: 27px
+  &__line
+    width: 653px
+    height: 1px
+    border-bottom: 1px solid #D9DADB
+    margin-top: 59px
