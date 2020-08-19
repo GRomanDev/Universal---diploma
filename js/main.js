@@ -46,13 +46,13 @@ $(document).ready(function () {
     });
   });
 
-  var slideshowSlider = new Swiper(".swiper-container", {
-    // Optional parameters
-    loop: true,
-    // effect: "fade",
-    navigation: {
-      nextEl: ".slideshow-slider__button--next",
-      prevEl: ".slideshow-slider__button--prev",
-    },
-  });
+  // var slideshowSlider = new Swiper(".swiper-container", {
+  //   // Optional parameters
+  //   loop: true,
+  //   // effect: "fade",
+  //   navigation: {
+  //     nextEl: ".slideshow-slider__button--next",
+  //     prevEl: ".slideshow-slider__button--prev",
+  //   },
+  // });
 });
