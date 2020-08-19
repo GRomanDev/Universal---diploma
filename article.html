@@ -907,6 +907,42 @@
         <!-- /.container -->
       </section>
       <!-- /.other -->
+      <section class="review">
+        <div class="container-2">
+          <div class="review-wrapper">
+            <img
+              src="img/article/review-avatar.png"
+              alt="Photo: user"
+              class="review__avatar"
+            />
+            <div class="review__inner">
+              <h4 class="review__title">What do you think?</h4>
+              <form action="send.php" method="POST" class="review__form">
+                <div class="review__input-group">
+                  <textarea
+                    class="review__message"
+                    name="message"
+                    required
+                    minlength="100"
+                  ></textarea>
+                </div>
+                <button class="button review__button" type="submit">
+                  Submit
+                  <img
+                    src="img/recommended/icons/icon-arrow.svg"
+                    alt="Icon: arrow"
+                    class="button__arrow"
+                  />
+                </button>
+              </form>
+            </div>
+            <!-- .review__inner -->
+          </div>
+          <!-- /.review-wrapper -->
+        </div>
+        <!-- /.container-2 -->
+      </section>
+      <!-- /.review -->
     </article>
     <footer class="footer">
       <div class="container">
