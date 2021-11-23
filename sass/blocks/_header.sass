@@ -1,21 +1,21 @@
 .header
   background-color: #FFFFFF
-  &-top    
+  &-top
     display: flex
-    align-items: center    
-    flex-wrap: wrap    
+    align-items: center
+    flex-wrap: wrap
     &--fixed
-      position: fixed    
+      position: fixed
       top: 0
       left: 0
       right: 0
       background-color: $light
-      z-index: 99      
-  &-menu    
+      z-index: 99
+  &-menu
     display: flex
     align-items: center
     background-color: transparent
-    &__text      
+    &__text
       font-weight: bold
       color: $text-grey-100
       font-size: 14px
@@ -40,7 +40,7 @@
   &-subscribe
     display: flex
     align-items: center
-    align-self: flex-end    
+    align-self: flex-end
     max-width: 195px
     max-height: 44px
     margin-left: auto
@@ -85,7 +85,7 @@
       height: 1px
   &-bottom
     display: flex
-    align-items: center    
+    align-items: center
     &__img
       margin-left: 30px
     &__loc
@@ -127,10 +127,10 @@
     bottom: 0
     top: 50px
     opacity: 0.98
-    padding-top: 55px    
-    overflow: auto  
-    z-index: 100  
-    &--visible      
+    padding-top: 55px
+    overflow: auto
+    z-index: 100
+    &--visible
       display: block
   &-menu
     display: flex
@@ -143,7 +143,7 @@
     &__item-dd
       margin-bottom: 15px
     &--dropdown
-      flex-direction: column      
+      flex-direction: column
       padding: 0
     &__link
       text-decoration: none
@@ -153,11 +153,9 @@
       line-height: 20px
       letter-spacing: 0.5px
       text-transform: uppercase
-  
-  
-    
-    
-
-
-
-
+      &::after
+        content: ""
+        display: block
+        width: 0%
+        height: 1px
+        background-color: $light
