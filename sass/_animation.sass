@@ -12,6 +12,30 @@
   &:hover
     background: darken(#4592FF, 20%)
 
+.rec-top
+  &__item
+    transition: all 0.3s
+    img
+      transition: all 0.3s
+    @media (any-hover: hover)
+      &:hover
+        color: #4592FF
+        img
+          transform: scale(1.1)
+
+.tabs-aside
+  &__item:not(:first-child)
+    @media (any-hover: hover)
+      &:hover
+        background-color: #F5F5F5
+
+.tabs-content
+  &__play-video
+    @media (any-hover: hover)
+      &:hover
+        img
+          transform: skew(-10deg)
+
 .footer
   &__list
     a
