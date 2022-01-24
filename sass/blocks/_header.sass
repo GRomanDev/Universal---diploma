@@ -15,6 +15,7 @@
     display: flex
     align-items: center
     background-color: transparent
+    cursor: pointer
     &__text
       font-weight: bold
       color: $text-grey-100
@@ -174,3 +175,38 @@
         width: 0%
         height: 1px
         background-color: $light
+
+.icon-menu
+  display: block
+  position: relative
+  width: 18px
+  height: 18px
+  cursor: pointer
+  z-index: 5
+  background: #fff
+  span,
+  &::before,
+  &::after
+    content: ""
+    transition: all 0.3s ease 0s
+    left: 0px
+    position: absolute
+    width: 100%
+    height: 2px
+    background-color: #BCBFC2
+  &::before
+    top: 0px
+  &::after
+    bottom: 0px
+  span
+    top: calc(50% - 1px)
+    width: 80%
+.menu-open
+  span
+    transform: scale(0)
+  &::before
+    transform: rotate(-45deg)
+    top: calc(50% - 1px)
+  &::after
+    transform: rotate(45deg)
+    bottom: calc(50% - 1px)
