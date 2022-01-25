@@ -36,6 +36,46 @@
         img
           transform: skew(-10deg)
 
+.card
+  transition: all 0.3s
+  overflow: hidden
+  &-cars__main
+    overflow: hidden
+    &-text
+      z-index: 2
+    &-photo
+      z-index: 1
+      transition: all 0.5s
+  &-cats__img
+    transition: all 0.5s
+  @media (any-hover: hover)
+    &:hover
+      box-shadow: 12px 10px 1px 1px rgba(38, 45, 51, 0.3)
+      .card-cars__main-photo
+        transform: scale(1.1)
+      .card-cats__img
+        transform: scale(1.1)
+  &-popular
+    &::before
+      transition: all 0.5s
+    @media (any-hover: hover)
+      &:hover
+        box-shadow: none
+        &::before
+          background-color: rgba(64,48,61,0)
+.columns
+  transition: all 0.3s
+  @media (any-hover: hover)
+    &:hover
+      background-color: lighten(#6E99AE, 4%)
+      box-shadow: none
+  &__end
+    transition: all 0.3s
+    @media (any-hover: hover)
+      &:hover
+        color: $text-grey-85
+        border: 2px solid $text-grey-85
+        border-bottom-width: 5px
 .footer
   &__list
     a
