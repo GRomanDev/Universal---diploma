@@ -67,8 +67,13 @@
   transition: all 0.3s
   @media (any-hover: hover)
     &:hover
-      background-color: lighten(#6E99AE, 4%)
       box-shadow: none
+  &__block
+    transition: all 0.3s
+    @media (any-hover: hover)
+      &:hover
+        transform: scale(1.1)
+        border-bottom: 0 solid #6E99AE
   &__end
     transition: all 0.3s
     @media (any-hover: hover)
