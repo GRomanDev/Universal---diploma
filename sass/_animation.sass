@@ -81,6 +81,33 @@
         color: $text-grey-85
         border: 2px solid $text-grey-85
         border-bottom-width: 5px
+.bookmarks
+  &-main
+    &__block
+      transition: all 0.3s
+      @media (any-hover: hover)
+        &:hover
+          box-shadow: 100px 2px 90px -20px rgba(110, 153, 174, 0.6) inset
+    &__article
+      transition: all 0.3s
+      @media (any-hover: hover)
+        &:hover
+          color: #4592FF
+  &-aside
+    &__block
+      &::before
+        transition: all 0.3s
+      @media (any-hover: hover)
+        &:hover
+          &::before
+            opacity: .4
+    &__end
+      transition: all 0.3s
+      @media (any-hover: hover)
+        &:hover
+          border: 2px solid $text-grey-85
+          border-bottom-width: 5px
+
 .footer
   &__list
     a
