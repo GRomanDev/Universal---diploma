@@ -1,3 +1,16 @@
+.header
+  &-login__text
+    transition: all 0.3s
+    @media (any-hover: hover)
+      &:hover
+        color: #4592FF
+  &-menu
+    &__text
+      transition: all 0.3s
+    @media (any-hover: hover)
+      &:hover
+        .header-menu__text
+          color: #4592FF
 .navbar
   &-menu
     &__link
@@ -107,7 +120,12 @@
         &:hover
           border: 2px solid $text-grey-85
           border-bottom-width: 5px
-
+.prefoot
+  &-cards__small
+    transition: all 0.3s
+    @media (any-hover: hover)
+      &:hover
+        box-shadow: -37px -41px 36px 6px rgba(110, 153, 174, 0.6) inset
 .footer
   &__list
     a
@@ -140,3 +158,13 @@
       a
         &:hover
           color: #6E99AE
+  &__link-contact
+    transition: all 0.3s
+    @media (any-hover: hover)
+      &:hover
+        color: #4592FF
+  &__icon
+    transition: all 0.3s
+    @media (any-hover: hover)
+      &:hover
+        opacity: .7
