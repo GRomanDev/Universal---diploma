@@ -187,3 +187,38 @@
       &:hover
         &::before
           opacity: 1
+  &__button
+    transition: all 0.3s
+    @media (any-hover: hover)
+      &:hover
+        background-color: #4592FF
+  &__card
+    &-icon
+      fill: #fff
+      stroke: #BCBFC2
+      transition: all 0.3s
+      @media (any-hover: hover)
+        &--fb
+          &:hover
+            fill: #4267B2
+        &--tw
+          &:hover
+            fill: #1DA1F2
+        &--ig
+          &:hover
+            fill: #262626
+    &-end
+      transition: all 0.3s
+      margin-bottom: -1px
+      border-radius: 0 0 10px 10px
+      @media (any-hover: hover)
+        &:hover
+          background-color: #4592FF
+          color: $light
+.slideshow-slider__button
+  transition: all 0.3s
+  @media (any-hover: hover)
+    &:hover
+      border-radius: 100%
+      background-color: #4592FF
+      opacity: .8
