@@ -38,8 +38,15 @@ $(document).ready(function () {
     });
   });
 
-  var loadComments = $(".comments__button-load");
-  loadComments.on("click", function () {
-    $(".comments__cards--hidden").addClass("comments__cards--visible");
+  const loadComments = document.querySelector(".comments__button-load");
+  let loadCommentsText = document.querySelector(".comments__button-load span");
+  loadComments.addEventListener("click", function () {
+    document.querySelector(".comments__cards--hidden").classList.toggle("comments__cards--visible");
+    // loadComments.style.display = "none";
+    if (loadCommentsText.innerText.toLowerCase() === 'show less') {
+      loadCommentsText.innerText = 'Load more';
+    } else {
+      loadCommentsText.innerText = 'Show less';
+    }
   });
 });
