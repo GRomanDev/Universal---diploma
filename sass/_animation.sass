@@ -39,11 +39,17 @@
       &:hover
         background-color: #F5F5F5
 .tabs-content
-  &__play-video
+  &__title a
+    transition: all 0.3s
     @media (any-hover: hover)
       &:hover
-        img
-          transform: skew(-10deg)
+        color: #4592FF
+  &__icon-play
+    transition: all 0.3s
+    border-radius: 100%
+    @media (any-hover: hover)
+      &:hover
+        box-shadow: -37px -41px 36px 6px rgba(5, 6, 7, 0.6) inset
 .card
   transition: all 0.3s
   overflow: hidden
