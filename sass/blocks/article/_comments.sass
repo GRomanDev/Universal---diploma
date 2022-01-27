@@ -113,6 +113,12 @@
       margin-right: 7px
   &__cards
     &--hidden
-      display: none
+      height: 0
+      opacity: 0
+      visibility: hidden
+      transition: all 0.2s
     &--visible
-      display: block
+      height: 100%
+      opacity: 1
+      visibility: visible
+      transition: all 1.2s
