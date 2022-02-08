@@ -271,11 +271,14 @@
     &-slider
       flex-basis: 100%
       min-width: 555px
-      height: 570px
+      min-height: 460px
       &__prof
         margin-bottom: 45px
       &__article
         margin-bottom: 60px
+      &__pagination
+        &.swiper-pagination-bullets
+          bottom: 10px
     &__slider
       margin: 0 auto 30px
     &-cards
@@ -862,3 +865,8 @@
       grid-row: 7
   .invalid
     width: 270px
+@media (max-width: 400px)
+  .prefoot-slider
+    &__article
+      font-size: 25px
+      line-height: 36px
