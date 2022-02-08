@@ -4,6 +4,14 @@ $(document).ready(function () {
     $(".navbar-dropdown").toggleClass("navbar-dropdown--visible");
     $(".icon-menu").toggleClass("menu-open");
   });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.code === 'Escape' && document.querySelector('.navbar-dropdown').classList.contains('navbar-dropdown--visible')) {
+      document.querySelector('.navbar-dropdown').classList.remove('navbar-dropdown--visible');
+      document.querySelector('.icon-menu').classList.remove('menu-open');
+    }
+  });
+
   $(".fancybox").fancybox();
 
   const tab = $(".tab");
