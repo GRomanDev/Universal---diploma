@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  const menuLinks = document.querySelectorAll('.navbar-menu__link');
   var headerMenu = $(".header-menu");
   headerMenu.on("click", function () {
     $(".navbar-dropdown").toggleClass("navbar-dropdown--visible");
@@ -11,6 +12,16 @@ $(document).ready(function () {
       document.querySelector('.icon-menu').classList.remove('menu-open');
     }
   });
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      if (e.target === link && document.querySelector('.navbar-dropdown').classList.contains('navbar-dropdown--visible')) {
+        document.querySelector('.navbar-dropdown').classList.remove('navbar-dropdown--visible');
+        document.querySelector('.icon-menu').classList.remove('menu-open');
+      }
+    });
+  });
+
 
   $(".fancybox").fancybox();
 
