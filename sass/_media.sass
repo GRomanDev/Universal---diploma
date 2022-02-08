@@ -127,7 +127,7 @@
         font-size: 12px
         line-height: 16px
   .recommended
-    height: 505px
+    min-height: 730px
   .rec
     &-top
       font-size: 16px
@@ -374,6 +374,8 @@
       padding-top: 15px
       &--visible
         display: block
+  .recommended
+    min-height: 670px
   .rec
     &-top
       padding: 25px 20px 25px
@@ -557,25 +559,33 @@
       &__loc
         font-size: 11px
         line-height: 12px
+  .recommended
+    min-height: 520px
   .rec
     &-top
       flex-wrap: wrap
       &__item
-        flex-basis: 48%
-        &:not(:last-child)
-          margin: 0
+        flex-basis: 100%
+        flex-direction: row
+        align-items: start
         &:nth-child(2n)
-          margin: 0
+          margin: 0 0 15px 0
           padding-right: 0
           border-right: none
+        &:not(:last-child)
+          margin: 0 0 15px 0
+          border-right: none
       &__text
-        margin-bottom: 15px
+        margin: 0 0 0 15px
+        text-align: left
+        max-width: 100%
   .rec
     &-bottom
       flex-direction: column
   .tabs
     &-content
       max-height: 300px
+      min-height: 294px
       padding: 20px 25px 20px 25px
       &__title
         font-size: 20px
