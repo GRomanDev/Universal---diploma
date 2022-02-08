@@ -130,12 +130,10 @@
     height: 505px
   .rec
     &-top
-      font-size: 11px
-      line-height: 20px
+      font-size: 16px
+      line-height: 25px
       &__item
-        display: flex
         flex-direction: column
-        align-items: center
         &:not(:last-child)
           margin: 0 15px 0 0
           padding-right: 15px
@@ -147,6 +145,21 @@
         max-width: 174px
         margin: 7px 0 0
         text-align: center
+  .rec
+    &-top
+      flex-wrap: wrap
+      &__item
+        flex-basis: 48%
+        &:not(:last-child)
+          margin: 0
+        &:nth-child(2n)
+          margin: 0
+          padding-right: 0
+          border-right: none
+        &:nth-child(n+3)
+          margin-top: 15px
+      &__text
+        margin-bottom: 15px
     &-bottom
       max-height: 570px
       // flex-direction: column
@@ -364,12 +377,8 @@
   .rec
     &-top
       padding: 25px 20px 25px
-      font-size: 10.5px
-      line-height: 17px
-      &__item
-        &:not(:last-child)
-          margin: 0 8px 0 0
-          padding-right: 8px
+      font-size: 15.5px
+      line-height: 20px
   .tabs
     &-content
       padding: 30px 35px 35px 25px
@@ -559,8 +568,6 @@
           margin: 0
           padding-right: 0
           border-right: none
-        &:nth-child(n+3)
-          margin-top: 15px
       &__text
         margin-bottom: 15px
   .rec
