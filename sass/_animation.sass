@@ -1,3 +1,17 @@
+._anim-show
+  transform: translate(0px, 120%)
+  opacity: 0
+  transition: all 0.8s ease 0s
+  &--down
+    transform: translate(0px, -120%)
+    opacity: 0
+    transition: all 0.8s ease 0s
+
+._anim-show._active, ._anim-show--down._active,
+._active ._anim-show ._anim-show--down
+  opacity: 1
+  transform: translate(0px, 0px)
+
 .header
   &-login__text
     transition: all 0.3s
