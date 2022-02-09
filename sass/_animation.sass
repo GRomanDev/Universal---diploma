@@ -1,7 +1,7 @@
 ._anim-show
   transform: translate(0px, 120%)
   opacity: 0
-  transition: all 0.8s ease 0s
+  transition: all 0.8s ease 0.2s
   &--down
     transform: translate(0px, -120%)
     opacity: 0
@@ -12,6 +12,65 @@
   opacity: 1
   transform: translate(0px, 0px)
 
+.card
+  transform: scale(0)
+  opacity: 0
+.card._active
+  transform: scale(1)
+  opacity: 1
+  transition: all 0.8s ease 0s
+.columns
+  transform: translate(120px, 0%)
+  opacity: 0
+  visibility: hidden
+.columns._active
+  visibility: visible
+  opacity: 1
+  transform: translate(0px, 0px)
+  transition: all 1.1s ease 0.5s
+.bookmarks-main__block
+  // transform: translate(0px, 120%)
+  // opacity: 0
+.bookmarks-main__block._active
+  // opacity: 1
+  // transform: translate(0px, 0px)
+  // transition: all 0.8s ease 0s
+.footer-wrap
+  .footer__list
+    transform: translate(-120px, 0%)
+    opacity: 0
+  &._active
+    .footer__list
+      opacity: 1
+      transform: translate(0px, 0px)
+      @for $var from 1 to 7
+        $delay: $var * 0.2
+        &:nth-child(#{$var})
+          @if $var==1
+            transition: all 0.8s ease 0s
+          @else
+            transition: all 0.8s ease #{$delay + s}
+.main__card, .material-card
+  transform: scale(0)
+  opacity: 0
+.main__card._active, .material-card._active
+  transform: scale(1)
+  opacity: 1
+  transition: all 0.8s ease 0s
+.quote-card__text
+  transform: translate(-120px, 0%)
+  opacity: 0
+  &._active
+    opacity: 1
+    transform: translate(0px, 0px)
+    transition: all 0.8s ease 0.4s
+.quote-card__author
+  transform: translate(120px, 0%)
+  opacity: 0
+  &._active
+    opacity: 1
+    transform: translate(0px, 0px)
+    transition: all 0.8s ease 0.4s
 .header
   &-login__text
     transition: all 0.3s

@@ -1,8 +1,25 @@
 $(document).ready(function () {
+  const menuLinks = document.querySelectorAll('.navbar-menu__link');
   var headerMenu = $(".header-menu");
   headerMenu.on("click", function () {
     $(".navbar-dropdown").toggleClass("navbar-dropdown--visible");
     $(".icon-menu").toggleClass("menu-open");
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.code === 'Escape' && document.querySelector('.navbar-dropdown').classList.contains('navbar-dropdown--visible')) {
+      document.querySelector('.navbar-dropdown').classList.remove('navbar-dropdown--visible');
+      document.querySelector('.icon-menu').classList.remove('menu-open');
+    }
+  });
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      if (e.target === link && document.querySelector('.navbar-dropdown').classList.contains('navbar-dropdown--visible')) {
+        document.querySelector('.navbar-dropdown').classList.remove('navbar-dropdown--visible');
+        document.querySelector('.icon-menu').classList.remove('menu-open');
+      }
+    });
   });
 
   $(".form").each(function () {
@@ -49,4 +66,46 @@ $(document).ready(function () {
       loadCommentsText.innerText = 'Show less';
     }
   });
+
+  const animItems = document.querySelectorAll('._anim-items');
+
+  if (animItems.length > 0) {
+    window.addEventListener('scroll', animOnScroll);
+
+    function animOnScroll() {
+      for (let index = 0; index < animItems.length; index++) {
+        const animItem = animItems[index];
+        const animItemHeight = animItem.offsetHeight;
+        const animItemOffset = offset(animItem).top;
+        const animStart = 4;
+
+        let animItemPoint = window.innerHeight - animItemHeight / 40;
+        if (animItemHeight > window.innerHeight) {
+          animItemPoint = window.innerHeight - window.innerHeight / 40;
+        }
+
+        if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+          animItem.classList.add('_active');
+        } else {
+          if (!animItem.classList.contains('_anim-no-hide')) {
+            animItem.classList.remove('_active');
+          }
+        }
+      }
+    }
+
+    function offset(el) {
+      const rect = el.getBoundingClientRect(),
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      return {
+        top: rect.top + scrollTop,
+        left: rect.left + scrollLeft
+      };
+    }
+
+    setTimeout(() => {
+      animOnScroll();
+    }, 300);
+  }
 });

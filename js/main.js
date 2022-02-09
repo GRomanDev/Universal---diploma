@@ -78,12 +78,12 @@ $(document).ready(function () {
         const animItemOffset = offset(animItem).top;
         const animStart = 4;
 
-        let animItemPoint = window.innerHeight - animItemHeight / animStart;
+        let animItemPoint = window.innerHeight - animItemHeight / 40;
         if (animItemHeight > window.innerHeight) {
-          animItemPoint = window.innerHeight - window.innerHeight / animStart;
+          animItemPoint = window.innerHeight - window.innerHeight / 40;
         }
 
-        if ((scrollY > animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemHeight)) {
+        if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
           animItem.classList.add('_active');
         } else {
           if (!animItem.classList.contains('_anim-no-hide')) {
@@ -95,8 +95,8 @@ $(document).ready(function () {
 
     function offset(el) {
       const rect = el.getBoundingClientRect(),
-        scrollLeft = window.scrollX || document.documentElement.scrollLeft,
-        scrollTop = window.scrollY || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       return {
         top: rect.top + scrollTop,
         left: rect.left + scrollLeft
